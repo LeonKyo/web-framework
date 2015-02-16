@@ -1,0 +1,40 @@
+{
+  "projName": "webstarterkit",
+  "destPath": "html",
+  "useBrowserify": true,
+  "path": {
+    "servepath": "html",
+    "stagepath": "stage",
+    "distpath": "dist",
+    "assetspath": "assets",
+    "templatepath": "templates",
+    "buildassetspath": ""
+  },
+  "server": {
+    "lrStarted": false,
+    "connection": {
+      "local": "localhost",
+      "external": null,
+      "port": null
+    }
+  },
+  "build": {
+    "isStage": false,
+    "isProd": false
+  },
+  "pushbullet": {
+    "enabled": false,
+    "user": [
+      {
+        "email": "liakwee@gmail.com"
+      }
+    ]
+  },
+  "ftpserver": {
+    "host": "203.208.241.213",
+    "port": 22,
+    "user": "leon",
+    "pass": "xm4U2012",
+    "remotePath": "/rsw2010.xm-apac.com"
+  }
+}

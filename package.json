@@ -1,0 +1,76 @@
+{
+  "name": "XM-Web-starter-kit",
+  "version": "0.1.0",
+  "description": "XM Web Starter Kit",
+  "author": "Lee Liak Wee",
+  "license": "MIT",
+  "frontend": {
+    "name": "XM-Web-starter-kit",
+    "stylesheets": "assets/scss",
+    "javascripts": "assets/js"
+  },
+  "browser": {
+    "modernizr": "./assets/js/_bower_components/modernizr/modernizr.js",
+    "jquery": "./assets/js/_bower_components/jquery/dist/jquery.js"
+  },
+  "browserify-shim": {
+    "./assets/js/_bower_components/modernizr/modernizr.js": "Modernizr",
+    "./assets/js/_bower_components/jquery/dist/jquery.js": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "dependencies": {
+    "bower": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://xm-liakwee:liakwee337@bitbucket.org/richmediateam/xm-web-starter-kit.git"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.8.1",
+    "chalk": "^0.5.1",
+    "debowerify": "^1.2.0",
+    "del": "^1.1.0",
+    "event-stream": "^3.1.7",
+    "globule": "^0.2.0",
+    "gulp": "^3.8.10",
+    "gulp-autoprefixer": "1.0.1",
+    "gulp-cached": "^1.0.1",
+    "gulp-compile-handlebars": "0.3.3",
+    "gulp-concat": "^2.4.2",
+    "gulp-filter": "^1.0.2",
+    "gulp-gzip": "0.0.8",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.0.0",
+    "gulp-inject": "^1.0.2",
+    "gulp-install": "^0.2.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-notify": "^2.1.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-rsync": "0.0.5",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-scss-lint": "^0.1.4",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-strip-debug": "^1.0.2",
+    "gulp-svg-sprites": "^1.1.0",
+    "gulp-svg2png": "^0.3.0",
+    "gulp-tap": "^0.1.3",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.1",
+    "gulp-watch": "^3.0.0",
+    "gulp.spritesmith": "^2.2.0",
+    "imagemin-pngquant": "^4.0.0",
+    "jshint-stylish": "^1.0.0",
+    "lodash": "^2.4.1",
+    "main-bower-files": "^2.4.1",
+    "pushbullet": "^1.4.2",
+    "require-dir": "^0.1.0",
+    "run-sequence": "^1.0.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0"
+  }
+}

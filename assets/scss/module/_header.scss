@@ -1,0 +1,12 @@
+header {
+  //background: linear-gradient(to bottom, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+  display: block;
+}
+
+.icon-ourwayoflife {
+  @include sprite('ourwayoflife');
+}
+
+.icon {
+  @include svgsprite(cruise);
+}

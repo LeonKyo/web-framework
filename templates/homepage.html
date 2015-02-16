@@ -1,0 +1,40 @@
+{{> layout/header}}
+
+<!-- Your HTML here -->
+<h1>Title 01 Heading</h1>
+Hello world
+<a href="#">click me!!</a>
+
+<a href="http://www.google.com">
+<div class="tile">
+  <img src="http://placehold.it/350x350" alt="">
+  <div class="hover-details">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores totam quo voluptatum. Temporibus molestiae harum neque explicabo voluptate. Voluptas, amet.
+  </div>
+</div>
+
+<style>
+  .tile{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .tile:hover .hover-details,
+  .tile:active .hover-details{
+    top: 0;
+  }
+
+  .hover-details{
+    position: absolute;
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+    top: 200px;
+    transition: all 0.5s ease;
+    z-index: 1;
+    background: #fff000;
+  }
+</style>
+{{> layout/footer}}

@@ -1,0 +1,12 @@
+.idea
+.sass-cache
+*.sublime-project
+*.sublime-workspace
+html
+build
+dist
+node_modules
+bower_components
+api-docs
+stage
+npm-debug.log

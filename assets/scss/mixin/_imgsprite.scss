@@ -1,0 +1,104 @@
+@mixin sprite($filename) {
+
+  &:before {
+    content: "";
+    display: inline-block;
+
+    @if $filename == architecture {
+      background-image: url('/images/sprite.png');
+      background-position: -374px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == arts {
+      background-image: url('/images/sprite.png');
+      background-position: -854px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == beyondsingapore {
+      background-image: url('/images/sprite.png');
+      background-position: -534px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == culture {
+      background-image: url('/images/sprite.png');
+      background-position: -694px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == diningout {
+      background-image: url('/images/sprite.png');
+      background-position: -1174px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == facebook-like {
+      background-image: url('/images/sprite.png');
+      background-position: -62px 0px;
+      height: 72px;
+      width: 72px;
+    }
+    @if $filename == facebook {
+      background-image: url('/images/sprite.png');
+      background-position: 0px 0px;
+      height: 30px;
+      width: 30px;
+    }
+    @if $filename == foursquare {
+      background-image: url('/images/sprite.png');
+      background-position: -30px 0px;
+      height: 32px;
+      width: 32px;
+    }
+    @if $filename == history {
+      background-image: url('/images/sprite.png');
+      background-position: -214px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == localdishes {
+      background-image: url('/images/sprite.png');
+      background-position: -1014px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == mapexpand {
+      background-image: url('/images/sprite.png');
+      background-position: -134px 0px;
+      height: 80px;
+      width: 80px;
+    }
+    @if $filename == naturewildlife {
+      background-image: url('/images/sprite.png');
+      background-position: -1334px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == neighbourhoods {
+      background-image: url('/images/sprite.png');
+      background-position: -1494px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == nightlifeinthecity {
+      background-image: url('/images/sprite.png');
+      background-position: -1654px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == ourhistory {
+      background-image: url('/images/sprite.png');
+      background-position: -1814px 0px;
+      height: 160px;
+      width: 160px;
+    }
+    @if $filename == ourwayoflife {
+      background-image: url('/images/sprite.png');
+      background-position: -1974px 0px;
+      height: 160px;
+      width: 160px;
+    }
+  }
+}

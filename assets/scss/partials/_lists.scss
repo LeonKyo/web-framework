@@ -1,0 +1,9 @@
+ul {
+  &.bulletlist {
+    list-style: disc;
+  }
+
+  li {
+    margin: 0;
+  }
+}
