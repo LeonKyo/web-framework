@@ -84,7 +84,7 @@ gulp.task('templates', function() {
                 .pipe(compileHandlebars({
                     templateName: baseName
                 }, {
-                    batch: [config.path.templatepath + '/layout', config.path.templatepath + '/partials', config.path.templatepath + '/components'],
+                    batch: [config.path.templatepath + '/layout', config.path.templatepath + '/partials', config.path.templatepath + '/partials/components'],
                     helpers: {
                         equal: function(v1, v2, options) {
                             return (v1 == v2) ? options.fn(this) : options.inverse(this);

@@ -1,5 +1,7 @@
+/*
 var jQuery = require('../bower_components//jquery/dist/jquery.js');
 var Helper = require('./helper.js');
+*/
 
 (function($, window) {
     console.log('from Hello:'+ window);

@@ -1,7 +1,7 @@
 {
   "projName": "webstarterkit",
   "destPath": "html",
-  "useBrowserify": true,
+  "useBrowserify": false,
   "path": {
     "servepath": "html",
     "stagepath": "stage",
