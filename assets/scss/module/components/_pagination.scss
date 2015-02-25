@@ -1,0 +1,57 @@
+/*
+ * pagination.scss
+ *
+ * $Rev:: 1         $:  Revision of last commit
+ * $Author:: Leon       $:  Author of last commit
+ * $Date:: 2015-01-15 1#$:  Date of last commit
+*/
+
+/*
+ * To seperate content of a component chunk of codes & content
+*/
+
+.pagination{
+  list-style: none;
+  padding: 0;
+
+  @include clearfix;
+
+  li{
+    display: inline-block;
+  }
+
+  a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: $component-enabled-color;
+
+    @include transition(all 0.3s ease-in-out);
+
+    &.active,
+    &:hover{
+      background-color: #CCC;
+
+      &.disabled{
+        background: none;
+      }
+
+    }
+
+    &.pagination-prev{
+
+    }
+
+    &.pagination-next{
+
+    }
+
+    &.disabled{
+      cursor: not-allowed;
+      color: $component-disabled-color;
+    }
+
+  }
+
+}
+

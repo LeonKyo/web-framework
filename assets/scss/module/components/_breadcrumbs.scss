@@ -1,0 +1,42 @@
+/*
+ * breadcrumbs.scss
+ *
+ * $Rev:: 1         $:  Revision of last commit
+ * $Author:: Leon       $:  Author of last commit
+ * $Date:: 2015-01-15 1#$:  Date of last commit
+*/
+
+/*
+ * To seperate content of a component chunk of codes & content
+*/
+
+.breadcrumb{
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  @include clearfix;
+
+  li{
+    display: inline-block;
+    list-style: none;
+
+    &.active a,
+    &:hover a{
+      text-decoration: underline;
+    }
+  }
+
+  >li+li:before{
+    padding: 0 5px;
+    color: $component-enabled-color;
+    content: "/\00a0";
+  }
+
+  a{
+    text-decoration: none;
+    color: $component-enabled-color;
+  }
+
+}
+

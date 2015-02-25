@@ -1,0 +1,71 @@
+/*
+ * columns.scss
+ *
+ * $Rev:: 1         $:  Revision of last commit
+ * $Author:: Leon       $:  Author of last commit
+ * $Date:: 2015-01-15 1#$:  Date of last commit
+*/
+
+/*
+ * To seperate content of a component chunk of codes & content
+*/
+
+
+.columns{
+
+  margin: 0 0 $default-spacing 0;
+  @include clearfix;
+
+  .column{
+    @include span-columns(12);
+    float: left;
+    border: 1px solid #CCC;
+  }
+
+  &.col-2 .column{
+    @include span-columns(6 of 12);
+  }
+
+  &.col-3 .column{
+    @include span-columns(4 of 12);
+  }
+
+  &.col-4 .column{
+    @include span-columns(3 of 12);
+  }
+
+  &.col-5 .column{
+    @include span-columns(2.4 of 12);
+  }
+
+  &.col-6 .column{
+    @include span-columns(2 of 12);
+  }
+
+
+  &.col-2.collapsed .column{
+    @include span-columns(6 of 12, block-collapse);
+    margin: 0;
+  }
+
+  &.col-3.collapsed .column{
+    @include span-columns(4 of 12, block-collapse);
+    margin: 0;
+  }
+
+  &.col-4.collapsed .column{
+    @include span-columns(3 of 12, block-collapse);
+    margin: 0;
+  }
+
+  &.col-5.collapsed .column{
+    @include span-columns(2.4 of 12, block-collapse);
+    margin: 0;
+  }
+
+  &.col-6.collapsed .column{
+    @include span-columns(2 of 12, block-collapse);
+    margin: 0;
+  }
+
+}

@@ -1,0 +1,214 @@
+{{> layout/header}}
+
+<!-- HTML - START -->
+
+<nav class="pattern-nav">
+  Navigation to be placed here.
+</nav>
+
+<!-- HTML - Pattern HTML Structure - START -->
+<div class="page-wrapper">
+  <div class="page-container">
+    <h4 class="pattern-hdr">Pattern HTML Structure</h4>
+    <p>All components will use the following HTML structure.</p>
+  </div>
+</div>
+
+<div class="page-wrapper pattern-box">
+  <code>&lt;div class=&quot;page-wrapper&quot;&gt;</code>
+  <p>Full 100% width content here.<br>
+    CSS Styles to be implemented here are:
+    <ul>
+      <li>Background Image</li>
+      <li>Background Colour</li>
+      <li>Borders</li>
+    </ul>
+  </p>
+
+  <div class="page-container">
+    <code>&lt;div class=&quot;page-container&quot;&gt;</code>
+    <p>Not within a &lt;section&gt; tag. Use this for non-component type of content.<br>
+    The width of this container is controlled by the $max-width value found in the config_global file.</p>
+  </div>
+
+  <section>
+    <div class="page-container">
+      <code>&lt;section&gt; &lt;div class=&quot;page-container&quot;&gt;</code>
+      <p>Within a &lt;section&gt; tag. Use this for component type of content.</p>
+    </div>
+  </section>
+</div>
+
+<div class="page-wrapper">
+  <div class="page-container">
+    <h5>Example HTML Code:</h5>
+    <code>
+
+      &lt;div class=&quot;page-wrapper pattern-box&quot;&gt;<br>
+      &nbsp;&lt;div class=&quot;page-container&quot;&gt;&lt;/div&gt;<br>
+      &nbsp;&lt;section&gt;<br>
+      &nbsp;&nbsp;&lt;div class=&quot;page-container&quot;&gt;&lt;/div&gt;<br>
+      &nbsp;&lt;/section&gt;<br>
+      &lt;/div&gt;
+
+    </code>
+  </div>
+</div>
+<hr>
+<!-- HTML - Pattern HTML Structure - END -->
+
+
+<!-- HTML - Breakpoints - START -->
+<div class="page-wrapper">
+  <div class="page-container">
+    <h4 class="pattern-hdr">Breakpoints (For Responsive)</h4>
+    <p>The following table shows an overview of available breakpoints and it's respective devices.</p>
+
+    <table class="pattern-table">
+      <thead>
+      <tr>
+        <th>Size</th>
+        <th>Breakpoints</th>
+        <th>Device</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Mini</td>
+        <td>up to 479px</td>
+        <td>Phones portrait</td>
+      </tr>
+      <tr>
+        <td>Small</td>
+        <td>480px to 767px</td>
+        <td>Phones landscape</td>
+      </tr>
+      <tr>
+        <td>Medium</td>
+        <td>768px to 959px</td>
+        <td>Tablets portrait</td>
+      </tr>
+      <tr>
+        <td>Large</td>
+        <td>960px to 1199px</td>
+        <td>Desktops &amp; tablets landscape</td>
+      </tr>
+      <tr>
+        <td>Xlarge</td>
+        <td>1200px and larger</td>
+        <td>Large Desktops</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <p>Usually we build based on 3 breakpoints only, having Mini, Small and Large (which is 768px and larger).</p>
+
+  </div>
+</div>
+<hr>
+<!-- HTML - Breakpoints - END -->
+
+
+<!-- HTML - Components Intro - START -->
+<div class="page-wrapper">
+  <div class="page-container">
+    <h4 class="pattern-hdr">Components Introduction</h4>
+    <p>The components we've built are based on different categories depending on their purpose &amp; functionality.</p>
+
+    <table class="pattern-table">
+      <thead>
+      <tr>
+        <th>Category</th>
+        <th>Descriptions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Default / Base</td>
+        <td>These are the basic base components used across within most components.</td>
+      </tr>
+      <tr>
+        <td>Layout</td>
+        <td>Fully responsive fluid designs, consists of mainly common content layouts.</td>
+      </tr>
+      <tr>
+        <td>Navigation</td>
+        <td>Navigation bars and menus, breadcrumbs and pagination type of components.</td>
+      </tr>
+      <tr>
+        <td>Common</td>
+        <td>Common components such as buttons, icons, etc.</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Components that are configured and controlled by JavaScripts.</td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+<hr>
+<!-- HTML - Components Intro - END -->
+
+
+<!-- HTML - Components - Common - Button - START -->
+<div class="page-wrapper">
+  <div class="page-container">
+    <h4 class="pattern-hdr">Components: Common - Button</h4>
+
+    {{> components/button}}
+
+  </div>
+</div>
+<!-- HTML - Components - Common - Button - END -->
+
+<!-- HTML - Components - Common - BreadCrumb - START -->
+<div class="page-wrapper">
+  <div class="page-container">
+    <h4 class="pattern-hdr">Components: Common - BreadCrumb</h4>
+
+    {{> components/breadcrumb}}
+
+  </div>
+</div>
+<!-- HTML - Components - Common - BreadCrumb - END -->
+
+<!-- HTML - Components - Common - Pagination - START -->
+<div class="page-wrapper">
+  <div class="page-container">
+    <h4 class="pattern-hdr">Components: Common - Pagination</h4>
+
+    {{> components/pagniation}}
+
+  </div>
+</div>
+<!-- HTML - Components - Common - Pagination - END -->
+
+<!-- HTML - Components - Common - Table - START -->
+<div class="page-wrapper">
+  <div class="page-container">
+    <h4 class="pattern-hdr">Components: Common - Table</h4>
+
+    {{> components/table}}
+
+  </div>
+</div>
+<!-- HTML - Components - Common - Table - END -->
+
+<!-- HTML - Components - Common - Columns - START -->
+<div class="page-wrapper">
+  <div class="page-container">
+    <h4 class="pattern-hdr">Components: Common - Columns</h4>
+
+    {{> components/columns}}
+
+  </div>
+</div>
+<!-- HTML - Components - Common - Columns - END -->
+
+
+
+<!-- HTML - END -->
+
+{{> layout/footer}}

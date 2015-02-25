@@ -1,0 +1,37 @@
+/*
+ * table.scss
+ *
+ * $Rev:: 1         $:  Revision of last commit
+ * $Author:: Leon       $:  Author of last commit
+ * $Date:: 2015-01-15 1#$:  Date of last commit
+*/
+
+/*
+ * To seperate content of a component chunk of codes & content
+*/
+
+
+.table{
+
+  caption,
+  th{
+    text-align: left;
+  }
+
+  td,
+  th{
+    padding: 8px;
+    border-bottom: 1px solid #CCC;
+  }
+
+  &.full-width{
+    width: 100%;
+  }
+
+  &.border-lines{
+    th, td{
+      border: 1px solid #ddd;
+    }
+  }
+
+}

@@ -32,6 +32,15 @@ $locale: 'en';
 @import 'partials/helper';
 
 
+/** MIRUM Based Components **/
+@import 'module/components/pattern';
+@import 'module/components/layouts';
+@import 'module/components/buttons';
+@import 'module/components/breadcrumbs';
+@import 'module/components/pagination';
+@import 'module/components/table';
+@import 'module/components/columns';
+
 
 // Styles ---------------------------------------------------------------------
 @import 'module/header';

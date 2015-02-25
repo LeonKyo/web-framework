@@ -1,0 +1,56 @@
+/*
+ * layouts.scss
+ *
+ * $Rev:: 1         $:  Revision of last commit
+ * $Author:: Leon       $:  Author of last commit
+ * $Date:: 2015-01-15 1#$:  Date of last commit
+*/
+
+
+.page-wrapper{
+  margin-bottom: 20px;
+}
+
+.page-container {
+  width: 100%;
+  padding: 0 $default-spacing;
+  z-index: 1;
+}
+
+.component-section{
+  padding: 40px 0;
+  @include clearfix;
+}
+
+.left-content{
+  @include span-columns(4);
+}
+
+.right-content{
+  @include span-columns(4);
+}
+
+.half-content{
+  @include span-columns(6);
+}
+
+.tri-content{
+  @include span-columns(4);
+}
+
+.quad-content{
+  @include span-columns(3);
+}
+
+.left-nav {
+  @include span-columns(3);
+}
+.central-content {
+  @include span-columns(8);
+  @include omega();
+  margin: 0 auto;
+  float: none;
+  &:last-child {
+    margin: 0 auto !important;
+  }
+}

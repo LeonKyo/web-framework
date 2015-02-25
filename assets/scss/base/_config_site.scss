@@ -57,4 +57,31 @@ $link-color-focus: darken($link-color-hover, 10);
 $link-hover-effect: .1s;
 
 
+// BreakPoints - For responsive ------------------------------------------------------------------
+//
 
+$rd-responsive: true;
+
+$rd-size-small: 480px;
+$rd-size-medium: 768px;
+$rd-size-large: 960px;
+$rd-size-xlarge: 1200px;
+
+$rd-mini: '(max-width: #{$rd-size-small - 1px})';
+$rd-small: '(min-width: #{$rd-size-small}) and (max-width: #{$rd-size-medium - 1px})';
+$rd-medium: '(min-width: #{$rd-size-medium}) and (max-width: #{$rd-size-large - 1px})';
+$rd-large: '(min-width: #{$rd-size-large}) and (max-width: #{$rd-size-xlarge - 1px})';
+$rd-xlarge: '(min-width: #{$rd-size-xlarge})';
+$rd-devices: '(max-width: #{$rd-size-large - 1px})';
+
+// Padding, Spacing ------------------------------------------------------------------
+//
+
+$default-spacing: 20px;
+
+
+// Components Styles ------------------------------------------------------------------
+//
+
+$component-enabled-color: #000;
+$component-disabled-color: #CCC;
