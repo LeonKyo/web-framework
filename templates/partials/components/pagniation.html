@@ -3,7 +3,7 @@
   Set the current/active page with the <code>.active</code> class.</p>
 
 <h5 class="pattern-sub-hdr">Example:</h5>
-<nav>
+<nav role="navigation" aria-label="pagination">
   <ul class="pagination">
     <li><a href="#" class="pagination-prev">&laquo;</a></li>
     <li><a href="#" class="active">1</a></li>
@@ -17,7 +17,7 @@
 <h5 class="pattern-sub-hdr">Markup:</h5>
 <div class="pattern-code">
   <ol>
-    <li>&lt;nav&gt;</li>
+    <li>&lt;nav role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;</li>
     <li>&lt;ul class=&quot;pagination&quot;&gt;</li>
     <li>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;pagination-prev&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;</li>
     <li>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;1&lt;/a&gt;&lt;/li&gt;</li>
@@ -37,28 +37,28 @@
 <p>Simply add the <code>.disabled</code> class to a <code>&lt;a&gt;</code> element.</p>
 
 <h5 class="pattern-sub-hdr">Example:</h5>
-<nav>
+<nav role="navigation" aria-label="pagination">
   <ul class="pagination">
     <li><a href="#" class="pagination-prev disabled">&laquo;</a></li>
     <li><a href="#" class="active">1</a></li>
     <li><a href="#">2</a></li>
-    <li><a href="#" class="disabled">3</a></li>
-    <li><a href="#" class="disabled">4</a></li>
-    <li><a href="#" class="pagination-next disabled">&raquo;</a></li>
+    <li><a href="#" aria-disabled="true" class="disabled">3</a></li>
+    <li><a href="#" aria-disabled="true" class="disabled">4</a></li>
+    <li><a href="#" aria-disabled="true" class="pagination-next disabled">&raquo;</a></li>
   </ul>
 </nav>
 
 <h5 class="pattern-sub-hdr">Markup:</h5>
 <div class="pattern-code">
   <ol>
-    <li>&lt;nav&gt;</li>
+    <li>&lt;nav role=&quot;navigation&quot; aria-label=&quot;pagination&quot;&gt;</li>
     <li>&lt;ul class=&quot;pagination&quot;&gt;</li>
     <li>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;pagination-prev disabled&quot;&gt;&amp;laquo;&lt;/a&gt;&lt;/li&gt;</li>
     <li>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;1&lt;/a&gt;&lt;/li&gt;</li>
     <li>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;</li>
-    <li>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;disabled&quot;&gt;3&lt;/a&gt;&lt;/li&gt;</li>
-    <li>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;disabled&quot;&gt;4&lt;/a&gt;&lt;/li&gt;</li>
-    <li>&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;pagination-next&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;</li>
+    <li>&lt;li&gt;&lt;a href=&quot;#&quot; aria-disabled=&quot;true&quot; class=&quot;disabled&quot;&gt;3&lt;/a&gt;&lt;/li&gt;</li>
+    <li>&lt;li&gt;&lt;a href=&quot;#&quot; aria-disabled=&quot;true&quot; class=&quot;disabled&quot;&gt;4&lt;/a&gt;&lt;/li&gt;</li>
+    <li>&lt;li&gt;&lt;a href=&quot;#&quot; aria-disabled=&quot;true&quot; class=&quot;pagination-next&quot;&gt;&amp;raquo;&lt;/a&gt;&lt;/li&gt;</li>
     <li>&lt;/ul&gt;</li>
     <li>&lt;/nav&gt;</li>
   </ol>
