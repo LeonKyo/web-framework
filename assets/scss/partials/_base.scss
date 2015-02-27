@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  min-width: $max-container-width;
+  //min-width: $max-container-width;
   max-width: 100%;
   min-height: 100%;
   background: $white;
@@ -121,7 +121,7 @@ input {
   @include box-sizing(content-box);
   fieldset {
     label {
-      @include inline-block;
+      //@include inline-block;
     }
   }
 
