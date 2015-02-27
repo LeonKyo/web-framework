@@ -11,20 +11,35 @@
 */
 
 
-.pattern-nav{
+.pattern-nav {
+  @include clearfix;
   padding: 20px;
-  background-color: $black;
-  color: $white;
+  h1 {
+    text-align: center;
+  }
+  a {
+    color: $white;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li {
+      display: inline-block;
+    }
+  }
 }
 
 code{
   display: block;
   padding: 4px 8px;
   margin: 10px 0;
-  background: #f4f4f4;
+  background: $bone;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 12px;
+  color: $black;
 }
 
 p code{
@@ -35,29 +50,27 @@ p code{
 .pattern-hdr{
   padding: 10px;
   font-weight: bold;
-  background-color: #CCC;
+  background-color: $dark-bone;
 }
 
 .pattern-title-hdr{
-  background-color: #CCC;
+  background-color: $dark-bone;
   padding: 5px;
 }
 
 .pattern-sub-hdr{
-  border-left: 3px solid #CCC;
+  border-left: 3px solid $dark-bone;
   padding-left: 5px;
   margin: $default-spacing 0 ($default-spacing/2);
 }
 
-.pattern-box{
-  background-color: #EEE;
+.pattern-box {
+  background: url(../images/footer_lodyas.png) $light-grey;
   padding: 10px 0;
-
   font-size: 0.9em;
 }
 
-.pattern-table{
-
+.pattern-table {
   display: table;
   border-collapse: separate;
   border-spacing: 2px;

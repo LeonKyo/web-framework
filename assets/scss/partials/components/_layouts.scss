@@ -13,10 +13,18 @@
 
 .page-container {
   width: 100%;
-  padding: 0 $default-spacing;
+  max-width: $max-container-width;
+  margin: 0 auto;
   z-index: 1;
+  &.full-width {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
 }
-
+section {
+  padding: 0 $default-spacing;
+}
 .component-section{
   padding: 40px 0;
   @include clearfix;

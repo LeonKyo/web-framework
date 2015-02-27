@@ -2,8 +2,13 @@
 
 <!-- HTML - START -->
 
-<nav role="navigation" class="pattern-nav">
-  Navigation to be placed here.
+<nav role="navigation" class="pattern-nav bg-purple text-white">
+  <h1>Web Framework</h1>
+  <ul>
+    <li><a href="#">Patterns</a></li>
+    <li><a href="#">Components</a></li>
+    <li><a href="#"></a></li>
+  </ul>
 </nav>
 
 <!-- HTML - Pattern HTML Structure - START -->
@@ -14,29 +19,38 @@
   </div>
 </div>
 
-<div class="page-wrapper pattern-box">
-  <code>&lt;div class=&quot;page-wrapper&quot;&gt;</code>
-  <p>Full 100% width content here.<br>
-    CSS Styles to be implemented here are:
-    <ul>
-      <li>Background Image</li>
-      <li>Background Colour</li>
-      <li>Borders</li>
-    </ul>
-  </p>
+<!-- full width -->
+<div class="page-wrapper">
+  <div class="page-container full-width pattern-box text-white">
+    <code>&lt;div class=&quot;page-wrapper&quot;&gt;</code>
+    <p>Full 100% width content here.<br>
+      CSS Styles to be implemented here are:
+      <ul>
+        <li>Background Image</li>
+        <li>Background Colour</li>
+        <li>Borders</li>
+      </ul>
+    </p>
+  </div>
+</div>
 
-  <div class="page-container">
+<!-- page width -->
+<div class="page-wrapper">
+  <div class="page-container pattern-box text-white">
     <code>&lt;div class=&quot;page-container&quot;&gt;</code>
     <p>Not within a &lt;section&gt; tag. Use this for non-component type of content.<br>
     The width of this container is controlled by the $max-width value found in the config_global file.</p>
   </div>
+</div>
 
-  <section>
-    <div class="page-container">
-      <code>&lt;section&gt; &lt;div class=&quot;page-container&quot;&gt;</code>
+<!-- component width -->
+<div class="page-wrapper">
+  <div class="page-container pattern-box text-white">
+    <section>
+      <code>&lt;div class=&quot;page-container&quot;&gt;<br>&nbsp; &nbsp;&lt;section&gt;<br>&nbsp; &nbsp; &nbsp; ...<br>&nbsp; &nbsp;&lt;section&gt;<br>&lt;div class=&quot;page-container&quot;&gt;</code>
       <p>Within a &lt;section&gt; tag. Use this for component type of content.</p>
-    </div>
-  </section>
+    </section>
+  </div>
 </div>
 
 <div class="page-wrapper">
