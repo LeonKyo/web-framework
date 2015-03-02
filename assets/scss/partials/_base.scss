@@ -66,8 +66,8 @@ hr {
  * Remove default Paragraph styles.
  */
 
-p {
-  margin: 0 0 20px;
+p, ul {
+  margin: 0 0 10px;
 
   &:last-child {
     margin-bottom: 0;

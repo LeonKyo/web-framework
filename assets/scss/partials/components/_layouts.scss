@@ -23,7 +23,12 @@
   }
 }
 section {
-  padding: 0 $default-spacing;
+  width: percentage(1100/1140);
+  padding: $default-spacing;
+  margin: 0 auto;
+  &.full-width {
+    width: 100%;
+  }
 }
 .component-section{
   padding: 40px 0;

@@ -19,52 +19,89 @@
   </div>
 </div>
 
-<!-- full width -->
+<!-- full width: for edge-to-edge layouts -->
 <div class="page-wrapper">
   <div class="page-container full-width pattern-box text-white">
-    <code>&lt;div class=&quot;page-wrapper&quot;&gt;</code>
-    <p>Full 100% width content here.<br>
-      CSS Styles to be implemented here are:
+    <section>
+      <p>For full width layout with boxed width section<br>
+        CSS Styles to be implemented here are:
+      </p>
       <ul>
         <li>Background Image</li>
         <li>Background Colour</li>
         <li>Borders</li>
       </ul>
-    </p>
-  </div>
-</div>
-
-<!-- page width -->
-<div class="page-wrapper">
-  <div class="page-container pattern-box text-white">
-    <code>&lt;div class=&quot;page-container&quot;&gt;</code>
-    <p>Not within a &lt;section&gt; tag. Use this for non-component type of content.<br>
-    The width of this container is controlled by the $max-width value found in the config_global file.</p>
-  </div>
-</div>
-
-<!-- component width -->
-<div class="page-wrapper">
-  <div class="page-container pattern-box text-white">
-    <section>
-      <code>&lt;div class=&quot;page-container&quot;&gt;<br>&nbsp; &nbsp;&lt;section&gt;<br>&nbsp; &nbsp; &nbsp; ...<br>&nbsp; &nbsp;&lt;section&gt;<br>&lt;div class=&quot;page-container&quot;&gt;</code>
-      <p>Within a &lt;section&gt; tag. Use this for component type of content.</p>
     </section>
   </div>
 </div>
 
+<!-- full width: for edge-to-edge layouts -->
+<div class="page-wrapper">
+  <div class="page-container full-width pattern-box">
+    <section class="full-width bg-bone">
+      <p>For full width layout with full width section<br>
+        CSS Styles to be implemented here are:
+      </p>
+      <ul>
+        <li>Background Image</li>
+        <li>Background Colour</li>
+        <li>Borders</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<!-- boxed width: for max-width 960 layouts -->
+<div class="page-wrapper">
+  <div class="page-container pattern-box">
+    <section class="bg-bone">
+      <p>For boxed width layout with boxed width section<br>
+        CSS Styles to be implemented here are:
+      </p>
+      <ul>
+        <li>Background Image</li>
+        <li>Background Colour</li>
+        <li>Borders</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<!-- boxed width: for max-width 960 layouts -->
+<div class="page-wrapper">
+  <div class="page-container pattern-box">
+    <section class="full-width bg-bone">
+      <p>For boxed width layout with full width section<br>
+        CSS Styles to be implemented here are:
+      </p>
+      <ul>
+        <li>Background Image</li>
+        <li>Background Colour</li>
+        <li>Borders</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<!-- sample layout html code -->
 <div class="page-wrapper">
   <div class="page-container">
     <h5>Example HTML Code:</h5>
     <code>
-
-      &lt;div class=&quot;page-wrapper pattern-box&quot;&gt;<br>
-      &nbsp;&lt;div class=&quot;page-container&quot;&gt;&lt;/div&gt;<br>
-      &nbsp;&lt;section&gt;<br>
-      &nbsp;&nbsp;&lt;div class=&quot;page-container&quot;&gt;&lt;/div&gt;<br>
-      &nbsp;&lt;/section&gt;<br>
+      &lt;div class=&quot;page-wrapper&quot;&gt;<br>
+      &nbsp;&lt;div class=&quot;page-container full-width&quot;&gt;<br>
+      &nbsp; &nbsp;&lt;section&gt;For full width layout with boxed width section&lt;/section&gt;<br>
+      &nbsp;&lt;/div&gt;<br>
+      &nbsp;&lt;div class=&quot;page-container full-width&quot;&gt;<br>
+      &nbsp; &nbsp;&lt;section class=&quot;full-width&quot;&gt;For full width layout with full width section&lt;/section&gt;<br>
+      &nbsp;&lt;/div&gt;<br>
+      &nbsp;&lt;div class=&quot;page-container&quot;&gt;<br>
+      &nbsp; &nbsp;&lt;section&gt;For boxed width layout with boxed width section&lt;/section&gt;<br>
+      &nbsp;&lt;/div&gt;<br>
+      &nbsp;&lt;div class=&quot;page-container&quot;&gt;<br>
+      &nbsp; &nbsp;&lt;section class=&quot;full-width&quot;&gt;For boxed width layout with full width section&lt;/section&gt;<br>
+      &nbsp;&lt;/div&gt;<br>
       &lt;/div&gt;
-
     </code>
   </div>
 </div>
@@ -193,7 +230,7 @@
   <div class="page-container">
     <h4 class="pattern-hdr">Components: Common - Pagination</h4>
 
-    {{> components/pagniation}}
+    {{> components/pagination}}
 
   </div>
 </div>
