@@ -9,30 +9,31 @@
 
 .page-wrapper{
   margin-bottom: 20px;
-}
 
-.page-container {
-  width: 100%;
-  max-width: $max-container-width;
-  margin: 0 auto;
-  z-index: 1;
-  &.full-width {
+  .page-container{
     width: 100%;
-    max-width: 100%;
-    margin: 0;
+    padding: 0 $default-spacing;
+    z-index: 1;
+
+    &.pad-top-btm{
+      padding: $default-spacing;
+    }
   }
-}
-section {
-  width: percentage(1100/1140);
-  padding: $default-spacing;
-  margin: 0 auto;
-  &.full-width {
+
+  section{
     width: 100%;
+    max-width: $max-container-width;
+    margin: 0 auto;
+
+    &.full-width{
+      max-width: 100%;
+    }
+
+    .page-container{
+      @include clearfix;
+    }
   }
-}
-.component-section{
-  padding: 40px 0;
-  @include clearfix;
+
 }
 
 .left-content{
@@ -47,6 +48,10 @@ section {
   @include span-columns(6);
 }
 
+.main-content{
+  @include span-columns(8);
+}
+
 .tri-content{
   @include span-columns(4);
 }
@@ -55,9 +60,6 @@ section {
   @include span-columns(3);
 }
 
-.left-nav {
-  @include span-columns(3);
-}
 .central-content {
   @include span-columns(8);
   @include omega();

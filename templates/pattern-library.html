@@ -13,98 +13,16 @@
 
 <!-- HTML - Pattern HTML Structure - START -->
 <div class="page-wrapper">
-  <div class="page-container col-6">
-    <h2 class="pattern-hdr">Pattern HTML Structure</h2>
-    <p>All main components will use the following HTML container structure. Components within components will not need this container HTML.</p>
-  </div>
+  <section class="col-6">
+    <div class="page-container">
+      <h2 class="pattern-hdr">Pattern HTML Structure</h2>
+      <p>All main components should use the following HTML container structure. Components within components will not need to be within this container HTML, as there should only be one container. The purpose of the container strcuture is to cater for full-width content, background and border styling.</p>
+    </div>
+  </section>
 </div>
 
-<!-- full width: for edge-to-edge layouts -->
-<div class="page-wrapper">
-  <div class="page-container full-width pattern-box text-white">
-    <section>
-      <p>For full width layout with boxed width section<br>
-        CSS Styles to be implemented here are:
-      </p>
-      <ul>
-        <li>Background Image</li>
-        <li>Background Colour</li>
-        <li>Borders</li>
-      </ul>
-    </section>
-  </div>
-</div>
+{{> components/pattern_html}}
 
-<!-- full width: for edge-to-edge layouts -->
-<div class="page-wrapper">
-  <div class="page-container full-width pattern-box">
-    <section class="full-width bg-bone">
-      <p>For full width layout with full width section<br>
-        CSS Styles to be implemented here are:
-      </p>
-      <ul>
-        <li>Background Image</li>
-        <li>Background Colour</li>
-        <li>Borders</li>
-      </ul>
-    </section>
-  </div>
-</div>
-
-<!-- boxed width: for max-width 960 layouts -->
-<div class="page-wrapper">
-  <div class="page-container pattern-box">
-    <section class="bg-bone">
-      <p>For boxed width layout with boxed width section<br>
-        CSS Styles to be implemented here are:
-      </p>
-      <ul>
-        <li>Background Image</li>
-        <li>Background Colour</li>
-        <li>Borders</li>
-      </ul>
-    </section>
-  </div>
-</div>
-
-<!-- boxed width: for max-width 960 layouts -->
-<div class="page-wrapper">
-  <div class="page-container pattern-box">
-    <section class="full-width bg-bone">
-      <p>For boxed width layout with full width section<br>
-        CSS Styles to be implemented here are:
-      </p>
-      <ul>
-        <li>Background Image</li>
-        <li>Background Colour</li>
-        <li>Borders</li>
-      </ul>
-    </section>
-  </div>
-</div>
-
-<!-- sample layout html code -->
-<div class="page-wrapper">
-  <div class="page-container">
-    <h5>Example HTML Code:</h5>
-    <code>
-      &lt;div class=&quot;page-wrapper&quot;&gt;<br>
-      &nbsp;&lt;div class=&quot;page-container full-width&quot;&gt;<br>
-      &nbsp; &nbsp;&lt;section&gt;For full width layout with boxed width section&lt;/section&gt;<br>
-      &nbsp;&lt;/div&gt;<br>
-      &nbsp;&lt;div class=&quot;page-container full-width&quot;&gt;<br>
-      &nbsp; &nbsp;&lt;section class=&quot;full-width&quot;&gt;For full width layout with full width section&lt;/section&gt;<br>
-      &nbsp;&lt;/div&gt;<br>
-      &nbsp;&lt;div class=&quot;page-container&quot;&gt;<br>
-      &nbsp; &nbsp;&lt;section&gt;For boxed width layout with boxed width section&lt;/section&gt;<br>
-      &nbsp;&lt;/div&gt;<br>
-      &nbsp;&lt;div class=&quot;page-container&quot;&gt;<br>
-      &nbsp; &nbsp;&lt;section class=&quot;full-width&quot;&gt;For boxed width layout with full width section&lt;/section&gt;<br>
-      &nbsp;&lt;/div&gt;<br>
-      &lt;/div&gt;
-    </code>
-  </div>
-</div>
 <hr>
 <!-- HTML - Pattern HTML Structure - END -->
 
