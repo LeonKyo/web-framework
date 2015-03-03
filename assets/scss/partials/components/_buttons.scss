@@ -11,6 +11,24 @@
 */
 
 
+/*doc
+---
+title: Buttons
+name: button
+category: Base CSS
+---
+
+Button styles can be applied to any element. Typically you'll want to
+use either a `<button>`, `<a>`, `<input type='button'>` or `<input type='submit'>` element:
+
+```html_example
+<button class="btn">Click here!</button>
+<a class="btn" href="http://www.google.com.sg">Google.com.sg</a>
+```
+
+*/
+
+
 .btn{
   display: inline-block;
   padding: ($default-spacing / 2);
