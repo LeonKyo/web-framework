@@ -21,9 +21,9 @@ $grey: #999;
 $dark-grey: #555;
 $black: #000;
 
-$base-bg-color: #fff;
-$base-font-color: #000;
-$selection-background: #ccc;
+$base-bg-color: $white;
+$base-font-color: $black;
+$selection-background: $light-grey;
 $placeholder-color: $black !default;
 $border-color: #ccc;
 
@@ -71,6 +71,19 @@ $link-color-visited: $link-color-hover;
 $link-color-focus: darken($link-color-hover, 10);
 $link-hover-effect: .1s;
 
+/*
+ *  Button colors
+ */
+$button-color: $purple;
+$button-color-hover: darken($button-color, 5);
+$button-color-visited: $button-color-hover;
+$button-color-focus: $button-color-hover;
+$button-hover-effect: .1s;
+$button-font-color: $dark-bone;
+$button-hover-font-color: darken($button-font-color, 5);
+
+$button-disabled-color: $light-grey;
+$button-disabled-font-color: $grey;
 
 // BreakPoints - For responsive ------------------------------------------------------------------
 //

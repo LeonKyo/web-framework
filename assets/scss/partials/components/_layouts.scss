@@ -11,31 +11,26 @@
   margin-bottom: 20px;
 
   .page-container{
+    @extend .padding-left-right;
+    @include clearfix;
     width: 100%;
-    padding: 0 $default-spacing;
     z-index: 1;
-
-    &.pad-top-btm{
-      padding: $default-spacing;
-    }
   }
 
   section{
     width: 100%;
     max-width: $max-container-width;
     margin: 0 auto;
-
+    @include clearfix;
     &.full-width{
       max-width: 100%;
     }
-
-    .page-container{
-      @include clearfix;
-    }
   }
-
+  
 }
-
+.row {
+  @include row;
+}
 .left-content{
   @include span-columns(4);
 }

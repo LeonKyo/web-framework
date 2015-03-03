@@ -1,0 +1,122 @@
+<!-- // USAGE - START // -->
+<div class="page-wrapper">
+  <section>
+    <div class="page-container">
+      <h5 class="pattern-sub-hdr">Usage:</h5>
+
+      <code>&lt;div class=&quot;page-wrapper&quot;&gt;</code>
+      <p>Full width content are placed here, such as carousel, hero banners, full-width background colour or image, border lines, etc. <br>
+        The &lt;section&gt; tag uses a fixed width specified in the global configuration SCSS file.<br>
+        You can edit the $max-container-width variable found in the _config_global.scss file.<br>
+        You can add a .full-width CSS class to change the &lt;section&gt; tag to 100% width.</p>
+
+      <code>
+        &lt;div class=&quot;page-wrapper&quot;&gt;<br>
+        &nbsp;&lt;section&gt;<br>
+        &nbsp;&nbsp;&lt;div class=&quot;page-container&quot;&gt;
+      </code>
+      <p>The "page-container" class, comes with a default of 20px padding for the sides. Use helper CSS classes to adjust the top and bottom padding. Refer to the Example below for a list of helper CSS classes for inner layout placement.</p>
+    </div>
+
+    <div class="page-container">
+      <h5 class="pattern-sub-hdr">Markup:</h5>
+      <div class="pattern-code">
+        <ol>
+          <li>&lt;div class=&quot;page-wrapper&quot;&gt;</li>
+          <li>&nbsp;&lt;section&gt;</li>
+          <li>&nbsp;&nbsp;&lt;div class=&quot;page-container&quot;&gt;&lt;/div&gt;</li>
+          <li>&nbsp;&lt;/section&gt;</li>
+          <li>&lt;/div&gt;</li>
+        </ol>
+        <br>
+        <ol>
+          <li>&lt;div class=&quot;page-wrapper&quot;&gt;</li>
+          <li>&nbsp;&lt;section class=&quot;full-width&quot;&gt;</li>
+          <li>&nbsp;&nbsp;&lt;div class=&quot;page-container&quot;&gt;&lt;/div&gt;</li>
+          <li>&nbsp;&lt;/section&gt;</li>
+          <li>&lt;/div&gt;</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+</div>
+<!-- // USAGE - END // -->
+
+<!-- // EXAMPLE - START // -->
+<div class="page-wrapper pattern-box">
+  <section class="full-width">
+    <div class="page-container padding-top-bottom text-white">
+      <h5>Example:</h5>
+    </div>
+  </section>
+  <section>
+    <div class="page-container padding-top-bottom margin-bottom bg-bone">
+      <div class="row">
+        <div class="left-content bg-dark-bone">
+          .left-content
+        </div>
+        <div class="main-content bg-dark-bone">
+          .main-content
+        </div>
+      </div>
+      <code>
+        &lt;div class=&quot;page-wrapper&quot;&gt;<br>
+        &nbsp;&lt;section&gt;<br>
+        &nbsp;&nbsp;&lt;div class=&quot;page-container padding-top-bottom&quot;&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;div class=&quot;left-content&quot;&gt;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;div class=&quot;main-content&quot;&gt;&lt;/div&gt;<br>
+        &nbsp;&nbsp;&lt;/div&gt;<br>
+        &nbsp;&lt;/section&gt;<br>
+        &lt;/div&gt;
+      </code>
+      <div class="row margin-bottom">
+        <div class="main-content bg-dark-bone">
+          .main-content
+        </div>
+        <div class="right-content bg-dark-bone">
+          .right-content
+        </div>
+      </div>
+      <div class="row margin-bottom">
+        <div class="half-content bg-dark-bone">
+          .half-content
+        </div>
+        <div class="half-content bg-dark-bone">
+          .half-content
+        </div>
+      </div>
+      <div class="row margin-bottom">
+        <div class="tri-content bg-dark-bone">
+          .tri-content
+        </div>
+        <div class="tri-content bg-dark-bone">
+          .tri-content
+        </div>
+        <div class="tri-content bg-dark-bone">
+          .tri-content
+        </div>
+      </div>
+      <div class="row margin-bottom">
+        <div class="quad-content bg-dark-bone">
+          .quad-content
+        </div>
+        <div class="quad-content bg-dark-bone">
+          .quad-content
+        </div>
+        <div class="quad-content bg-dark-bone">
+          .quad-content
+        </div>
+        <div class="quad-content bg-dark-bone">
+          .quad-content
+        </div>
+      </div>
+      <div class="row margin-bottom">
+        <div class="central-content bg-dark-bone">
+          .central-content
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- // EXAMPLE - END // -->

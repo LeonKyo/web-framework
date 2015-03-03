@@ -7,50 +7,33 @@
 */
 
 /*
- * To seperate content of a component chunk of codes & content
-*/
+ * Button styles
+ */
 
 
-/*doc
----
-title: Buttons
-name: button
-category: Base CSS
----
-
-Button styles can be applied to any element. Typically you'll want to
-use either a `<button>`, `<a>`, `<input type='button'>` or `<input type='submit'>` element:
-
-```html_example
-<button class="btn">Click here!</button>
-<a class="btn" href="http://www.google.com.sg">Google.com.sg</a>
-```
-
-*/
-
-
-.btn{
+.btn {
   display: inline-block;
   padding: ($default-spacing / 2);
 
-  background-color: lightgray;
+  background-color: $button-color;
   border-radius: ($default-spacing / 4);
 
-  color: $component-enabled-color;
+  color: $button-font-color;
   font-size: 1em;
+  line-height: 1;
   text-decoration: none;
 
   &:hover{
-    background-color: darkgrey;
+    background-color: $button-color-hover;
+    color: $button-hover-font-color;
   }
 
   &.disabled{
-    background-color: #fafafa;
-    color: $component-disabled-color;
+    background-color: $button-disabled-color;
+    color: $button-disabled-font-color;
     border-color: rgba(0,0,0,.2);
     background-image: none;
     box-shadow: none;
-    text-shadow: 0 1px 0 #fff;
     cursor: not-allowed;
   }
 
