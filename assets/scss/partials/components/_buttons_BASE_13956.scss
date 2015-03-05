@@ -7,15 +7,15 @@
 */
 
 /*
- * Button styles
- */
+ * To seperate content of a component chunk of codes & content
+*/
 
 
 /*doc
 ---
 title: Buttons
 name: button
-category: Component - Button
+category: Base CSS
 ---
 
 Button styles can be applied to any element. Typically you'll want to
@@ -28,29 +28,29 @@ use either a `<button>`, `<a>`, `<input type='button'>` or `<input type='submit'
 
 */
 
+
 .btn{
   display: inline-block;
   padding: ($default-spacing / 2);
 
-  background-color: $button-color;
+  background-color: lightgray;
   border-radius: ($default-spacing / 4);
 
-  color: $button-font-color;
+  color: $component-enabled-color;
   font-size: 1em;
-  line-height: 1;
   text-decoration: none;
 
   &:hover{
-    background-color: $button-color-hover;
-    color: $button-hover-font-color;
+    background-color: darkgrey;
   }
 
   &.disabled{
-    background-color: $button-disabled-color;
-    color: $button-disabled-font-color;
+    background-color: #fafafa;
+    color: $component-disabled-color;
     border-color: rgba(0,0,0,.2);
     background-image: none;
     box-shadow: none;
+    text-shadow: 0 1px 0 #fff;
     cursor: not-allowed;
   }
 

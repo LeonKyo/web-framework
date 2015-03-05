@@ -7,8 +7,9 @@
 */
 
 /*
- * Button styles
- */
+<<<<<<< HEAD
+ * To seperate content of a component chunk of codes & content
+*/
 
 
 /*doc
@@ -29,6 +30,13 @@ use either a `<button>`, `<a>`, `<input type='button'>` or `<input type='submit'
 */
 
 .btn{
+=======
+ * Button styles
+ */
+
+
+.btn {
+>>>>>>> aa317287fe91b7ae5b467e242314f72730372b03
   display: inline-block;
   padding: ($default-spacing / 2);
 

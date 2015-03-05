@@ -451,6 +451,8 @@ input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button; // 2
     cursor: pointer; // 3
+    outline: 0;
+    border: none;
     @if $legacy_support_for_ie {
         *overflow: visible;  // 4
     }
