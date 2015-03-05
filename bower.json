@@ -25,5 +25,8 @@
     "webfontloader": "~1.5.14"
   },
   "main": "js/main.js",
-  "homepage": "index.html"
+  "homepage": "index.html",
+  "devDependencies": {
+    "Cortana": "~1.2.8"
+  }
 }
