@@ -10,6 +10,28 @@
  * To seperate content of a component chunk of codes & content
 */
 
+/*doc
+---
+title: BreadCrumbs
+name: breadcrumb
+category: Component - breadcrumb
+---
+
+To use this component, simply add the <code>.breadcrumb</code> class to a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> element.<br>
+Set the current/active page with the <code>.active</code> class.
+
+```html_example
+<nav role="navigation" aria-label="breadcrumb">
+  <ul class="breadcrumb">
+    <li><a href="#" aria-level="1">Home</a></li>
+    <li><a href="#" aria-level="2">Listing</a></li>
+    <li class="active"><a href="#">Offers Details</a></li>
+  </ul>
+</nav>
+```
+
+*/
+
 .breadcrumb{
   margin: 0;
   padding: 0;

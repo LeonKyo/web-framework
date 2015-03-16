@@ -14,10 +14,15 @@ documentation_assets: ./cortana
 custom_markdown: ./cortana/CortanaMarkdownRenderer.rb
 
 # To have a custom index page build with your README.md
-index: README
+#index: README
+#index: basics
 
 # List all css to include for the styleguide render examples (path from styleguide directory)
-#css_include:
+css_include:
+  - '../theme-build/css/bootstrap.css'
+  - '../theme-build/css/bottflat.css'
+  - '../../html/css/main.css'
+
 #  - './assets/css/vendors.css'
 #  - './assets/css/styles.css'
 

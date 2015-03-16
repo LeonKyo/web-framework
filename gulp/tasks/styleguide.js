@@ -55,7 +55,7 @@ gulp.task('scripts', function() {
 // JS vendors concat and minify
 gulp.task('js_vendors', function() {
   gulp.src([
-    //'styleguide/vendors/jquery/jquery.js',
+    /*'styleguide/vendors/jquery/jquery.js',*/
     'styleguide/vendors/Slidebars/distribution/0.9.4/slidebars.min.js',
 
     'styleguide/vendors/angular/angular.js',
@@ -93,7 +93,8 @@ gulp.task('hologram', function() {
 });
 
 //gulp.task('default', ['watch', 'js_vendors', 'css_vendors', 'styles', 'scripts', 'browser-sync']);
-gulp.task('hologram-gen', ['js_vendors', 'css_vendors', 'styles', 'scripts', 'hologram']);
+//gulp.task('hologram-gen', ['js_vendors', 'css_vendors', 'styles', 'scripts', 'hologram']);
+gulp.task('hologram-gen', ['css_vendors', 'styles', 'scripts', 'hologram']);
 
 
 
