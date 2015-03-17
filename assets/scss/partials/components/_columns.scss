@@ -6,8 +6,50 @@
  * $Date:: 2015-01-15 1#$:  Date of last commit
 */
 
-/*
- * To seperate content of a component chunk of codes & content
+/*doc
+---
+title: Columns
+name: column
+category: Component - columns
+---
+
+To use this component, simply add the <code>.columns</code> class to a <code>&lt;div&gt;</code> element.<br>
+Followed by using CSS helper class to define the total number of columns required. <br>
+For example, if there's 2 columns, the "col-2" CSS class is placed.
+
+```html_example
+<a role="button" aria-disabled="false" href="#" class="btn">&lt;a&gt; link disguised as a button</a>
+<button role="button" aria-disabled="false" class="btn"><span class="icon icon-demo"></span>&lt;button&gt; Button</button>
+<input role="button" aria-disabled="false" type="button" class="btn" value="Input Button" />
+<input role="button" aria-disabled="false" type="submit" class="btn" value="Input Submit" />
+```
+
+Along with the <code>.btn</code> class, add another additional <code>.disabled</code> class to the element.
+
+```html_example
+<a role="button" aria-disabled="true" href="#" class="btn disabled">&lt;a&gt; link disguised as a button</a>
+<button role="button" aria-disabled="true" class="btn disabled">&lt;button&gt; Button</button>
+<input role="button" aria-disabled="true" type="button" class="btn disabled" value="Input Button" />
+<input role="button" aria-disabled="true" type="submit" class="btn disabled" value="Input Submit" />
+```
+
+Along with the <code>.btn</code> class, add another additional <code>.full-width</code> class to the element.
+
+```html_example
+<div class="row">
+  <a role="button" aria-disabled="false" href="#" class="btn full-width">Full Width &lt;a&gt; link disguised as a button</a>
+</div>
+<div class="row">
+  <button role="button" aria-disabled="false" class="btn full-width">Full Width &lt;button&gt; Button</button>
+</div>
+<div class="row">
+  <input role="button" aria-disabled="false" type="button" class="btn full-width" value="Input Button" />
+</div>
+<div class="row">
+  <input role="button" aria-disabled="false" type="submit" class="btn full-width" value="Input Submit" />
+</div>
+```
+
 */
 
 

@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title><%= title %></title>
+    <title><%= @config['document_name'] %> - <%= title %></title>
 
     <!-- Styleguide CSS -->
-    <link rel="stylesheet" href="../theme-build/css/vendors.css">
-    <link rel="stylesheet" href="../theme-build/css/cortana.css">
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/cortana.css">
 
     <!-- Source CSS -->
     <% if @config['css_include'].to_s.strip.length != 0 %>

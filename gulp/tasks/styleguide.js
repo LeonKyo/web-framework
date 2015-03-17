@@ -85,10 +85,10 @@ gulp.task('js_vendors', function() {
  open: false
  });
  });
- */
+*/
 
 gulp.task('hologram', function() {
-  gulp.src('styleguide/config.yml')
+  gulp.src('styleguide/hologram_config.yml')
     .pipe(hologram());
 });
 
