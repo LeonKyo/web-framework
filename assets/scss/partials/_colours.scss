@@ -2,6 +2,61 @@
    Colours styles: colours for backgrounds and text
    ========================================================================== */
 
+/*doc
+---
+title: Color-Palette
+name: color-palette
+category: Base - Color-Platte
+---
+
+Fix colors can be applied using CSS classes, to be used across the whole site.
+
+```html_example
+<ul class="pattern-colorlist">
+  <li>
+    <div class="pattern-color bg-purple">.bg-purple</div>
+    Text Color:<p class="text-purple">.text-purple</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-light-purple">.bg-light-purple</div>
+    Text Color:<p class="text-light-purple">.text-light-purple</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-bone">.bg-bone</div>
+    Text Color:<p class="text-bone">.text-bone</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-dark-bone">.bg-dark-bone</div>
+    Text Color:<p class="text-dark-bone">.text-dark-bone</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-red">.bg-red</div>
+    Text Color:<p class="text-red">.text-red</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-pink">.bg-pink</div>
+    Text Color:<p class="text-pink">.text-pink</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-blue">.bg-blue</div>
+    Text Color:<p class="text-blue">.text-blue</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-green">.bg-green</div>
+    Text Color:<p class="text-green">.text-green</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-yellow">.bg-yellow</div>
+    Text Color:<p class="text-yellow">.text-yellow</p>
+  </li>
+  <li>
+    <div class="pattern-color bg-white">.bg-white</div>
+    Text Color:<p class="text-white">.text-white</p>
+  </li>
+</ul>
+```
+
+*/
 
 .bg-purple {
   background: $purple;
@@ -9,7 +64,6 @@
 .text-purple {
   color: $purple;
 }
-
 .bg-light-purple {
   background: $light-purple;
 }
