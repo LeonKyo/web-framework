@@ -6,6 +6,27 @@
  * $Date:: 2015-01-15 1#$:  Date of last commit
 */
 
+/*doc
+---
+title: Layouts
+name: layouts
+category: Component Layouts
+---
+
+All main components should use the following HTML container structure.
+Components within components will not need to be within this container HTML, as there should only be one container.
+The purpose of the container structure is to cater for full-width content, background and border styling.
+
+```html_example
+<div class="page-wrapper">
+  <section>
+    <div class="page-container bg-bone">background color for illustration purpose only</div>
+  </section>
+</div>
+```
+
+*/
+
 .page-wrapper{
   margin-bottom: 20px;
 
@@ -26,46 +47,4 @@
     }
   }
 
-}
-
-.row {
-  @include row;
-  margin-bottom: $default-spacing;
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.left-content{
-  @include span-columns(4);
-}
-
-.right-content{
-  @include span-columns(4);
-}
-
-.half-content{
-  @include span-columns(6);
-}
-
-.main-content{
-  @include span-columns(8);
-}
-
-.tri-content{
-  @include span-columns(4);
-}
-
-.quad-content{
-  @include span-columns(3);
-}
-
-.central-content {
-  @include span-columns(8);
-  @include omega();
-  margin: 0 auto;
-  float: none;
-  &:last-child {
-    margin: 0 auto !important;
-  }
 }
