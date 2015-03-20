@@ -1,5 +1,132 @@
+/*doc
+---
+title: Table
+name: table
+category: Base Table
+---
+
+The default table with options to add borders and/or make it stretch full-width.<br>
+However, we don't recommend making tables responsive as it will cause cells to be squashed and text might be unreadable.<br>
+If there is a responsive need, then relook at the content & it's logic to display it in a friendlier manner.
+
+```html_example
+<table role="grid">
+  <caption>Table caption</caption>
+  <thead>
+    <tr role="row">
+      <th role="columnheader">Table Heading</th>
+      <th role="columnheader">Table Heading</th>
+      <th role="columnheader">Table Heading</th>
+    </tr>
+  </thead>
+  <tfoot>
+  <tr role="row">
+    <td>Table Footer</td>
+    <td>Table Footer</td>
+    <td>Table Footer</td>
+  </tr>
+  </tfoot>
+  <tbody>
+    <tr role="row">
+      <td>Table Data</td>
+      <td>Table Data</td>
+      <td>Table Data</td>
+    </tr>
+    <tr role="row">
+      <td>Table Data</td>
+      <td>Table Data</td>
+      <td>Table Data</td>
+    </tr>
+    <tr role="row">
+      <td>Table Data</td>
+      <td>Table Data</td>
+      <td>Table Data</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+For 100% width, simply add the <code>.full-width</code> class to a <code>&lt;table&gt;</code> element.
+
+```html_example
+<table class="full-width" role="grid">
+  <caption>Table caption</caption>
+  <thead>
+    <tr role="row">
+      <th role="columnheader">Table Heading</th>
+      <th role="columnheader">Table Heading</th>
+      <th role="columnheader">Table Heading</th>
+    </tr>
+  </thead>
+  <tfoot>
+  <tr role="row">
+    <td>Table Footer</td>
+    <td>Table Footer</td>
+    <td>Table Footer</td>
+  </tr>
+  </tfoot>
+  <tbody>
+    <tr role="row">
+      <td>Table Data</td>
+      <td>Table Data</td>
+      <td>Table Data</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+For borders all around, simply add the <code>.border-lines</code> class to a <code>&lt;table&gt;</code> element.
+
+```html_example
+<table class="full-width border-lines" role="grid">
+  <caption>Table caption</caption>
+  <thead>
+    <tr role="row">
+      <th role="columnheader">Table Heading</th>
+      <th role="columnheader">Table Heading</th>
+      <th role="columnheader">Table Heading</th>
+    </tr>
+  </thead>
+  <tfoot>
+  <tr role="row">
+    <td>Table Footer</td>
+    <td>Table Footer</td>
+    <td>Table Footer</td>
+  </tr>
+  </tfoot>
+  <tbody>
+    <tr role="row">
+      <td>Table Data</td>
+      <td>Table Data</td>
+      <td>Table Data</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+*/
+
 table {
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
+  caption,
+  th {
+    text-align: left;
+  }
+
+  td,
+  th {
+    padding: 8px;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.border-lines {
+    th, td{
+      border: 1px solid #ddd;
+    }
+  }
 }

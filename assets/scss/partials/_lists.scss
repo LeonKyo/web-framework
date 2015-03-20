@@ -1,8 +1,39 @@
-ul {
-  &.bulletlist {
-    list-style: disc;
-  }
+/*doc
+---
+title: Lists
+name: lists
+category: Base Lists
+---
 
+These are default unordered-list styles
+
+```html_example
+<ul>
+  <li>This is an unordered list item</li>
+  <li>This is an unordered list item</li>
+  <li>This is an unordered list item</li>
+</ul>
+```
+
+These are default ordered-list styles
+
+```html_example
+<ol>
+  <li>This is an ordered list item</li>
+  <li>This is an ordered list item</li>
+  <li>This is an ordered list item</li>
+</ol>
+```
+
+*/
+
+ul {
+  li {
+    margin: 0;
+  }
+}
+
+ol {
   li {
     margin: 0;
   }

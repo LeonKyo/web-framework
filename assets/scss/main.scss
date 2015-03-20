@@ -31,17 +31,13 @@ $locale: 'en';
 @import 'partials/typography';
 @import 'partials/helper';
 
-
 /** MIRUM Based Components **/
-@import 'partials/icons';
-@import 'partials/components/pattern';
-@import 'partials/components/layouts';
-@import 'partials/components/buttons';
 @import 'partials/components/breadcrumbs';
+@import 'partials/components/buttons';
+@import 'partials/components/icons';
+@import 'partials/components/layouts';
 @import 'partials/components/pagination';
-@import 'partials/components/table';
-@import 'partials/components/columns';
-
+@import 'partials/components/pattern';
 
 // Styles ---------------------------------------------------------------------
 @import 'module/header';

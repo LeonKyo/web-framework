@@ -1,4 +1,22 @@
-.icon{
+/*doc
+---
+title: Icons
+name: links
+category: Component Icons
+---
+
+This is a default set of icons.<br>
+They can be further customised according to project requirements.<br>
+Please note that all icons need to be in SVG.
+
+```html_example
+<div class="icon icon-close"></div>
+<div class="icon icon-close"></div>
+```
+
+*/
+
+.icon {
   display: inline-block;;
   width: 20px;
   height: 20px;

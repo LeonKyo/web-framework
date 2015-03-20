@@ -11,28 +11,6 @@
 */
 
 
-/*doc
----
-title: Container
-name: container
-category: Component Container
----
-
-All main components should use the following HTML container structure.
-Components within components will not need to be within this container HTML, as there should only be one container.
-The purpose of the container structure is to cater for full-width content, background and border styling.
-
-```html_example
-<div class="page-wrapper">
-  <section>
-    <div class="page-container"></div>
-  </section>
-</div>
-```
-
-*/
-
-
 .pattern-nav {
   @include clearfix;
   padding: 20px;
